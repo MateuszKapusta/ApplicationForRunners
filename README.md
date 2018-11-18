@@ -13,4 +13,5 @@ AppCenter instruction https://docs.microsoft.com/en-us/appcenter/sdk/getting-sta
 <br />
 <br />
 
+
 ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/ApplicationForRunners_Xamarin_Forms/App.png)
