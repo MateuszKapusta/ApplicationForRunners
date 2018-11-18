@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 	xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				x:Class="ApplicationForRunners.AplicationPages.WorkoutListPage"
+				Title="Map Workout">
+  <Grid RowSpacing="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <ActivityIndicator Grid.RowSpan="2"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       IsVisible="False"
+                       IsEnabled="True"
+                       x:Name="syncIndicator"/>
+      
+    <StackLayout x:Name="StackLUWP"   Grid.Row="0" BackgroundColor="#5ABAFF" Padding="10,30,10,5" Orientation="Horizontal">
+            <Label TextColor="#555555" Text="Workout history" />
+            <StackLayout x:Name="buttonsPanel"  Orientation="Horizontal" HorizontalOptions="EndAndExpand"/>
+    </StackLayout>
+      
+      
+    <ListView x:Name="workoutList"
+				ItemSelected="OnSelected"
+				IsPullToRefreshEnabled="true" Refreshing="OnRefresh"
+				Grid.Row="1">
+      <ListView.ItemTemplate>
+         <DataTemplate>
+            <TextCell Text="{Binding StartTime, StringFormat='{0:dd-MM-yyyy HH:mm:ss }'}"  Detail="{Binding Time, StringFormat='{0:HH:mm:ss }'}">
+                <TextCell.ContextActions>
+                    <MenuItem  Clicked="OnComplete" Text="Delete" CommandParameter="{Binding .}"  />
+                </TextCell.ContextActions>
+
+            </TextCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+           
+  </Grid>
+</ContentPage>

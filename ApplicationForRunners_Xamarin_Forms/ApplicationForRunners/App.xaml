@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApplicationForRunners.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="defaultButtonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="Margin" Value="10,0,10,0"/>
+            </Style>
+
+            <Thickness x:Key="defaultPadding">0,30,0,30</Thickness>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:shared="clr-namespace:ApplicationForRunners.SharedClasses;assembly=ApplicationForRunners"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="ApplicationForRunners.AplicationPages.MapPage"
+             Title="Detail">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            
+            <OnPlatform x:Key="defaultMapOpacity"  x:TypeArguments="x:Double"
+                       iOS="1"
+                       WinPhone="1"
+                       Android="0.8"/>
+
+        </ResourceDictionary>
+    </Page.Resources>
+
+
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="54" />
+            <RowDefinition Height="46" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="62"/>
+        </Grid.ColumnDefinitions>
+
+        <shared:CommonMap    x:Name="MainMap" 
+            WidthRequest="320"
+            HeightRequest="200"        
+            MapType="Street"                           
+            Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6"   Grid.RowSpan="4" />
+
+
+        <StackLayout HorizontalOptions="CenterAndExpand"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6"   Grid.RowSpan="1"  >
+            <Label x:Name="WorkField1" Text="0:00:00" FontSize="50"  >
+                <Label.GestureRecognizers >
+                    <TapGestureRecognizer Tapped="OnTapGestureRecognizer" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+
+        <Grid   Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6"   Grid.RowSpan="1" ColumnSpacing="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <Label x:Name="WorkField2" Text="0.00"  FontSize="33"   Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1"   Grid.RowSpan="1" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapGestureRecognizer" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="WorkField3" Text="0.00"  FontSize="33"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1"   Grid.RowSpan="1" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapGestureRecognizer" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="WorkField4" Text="0.00"  FontSize="33"  Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1"   Grid.RowSpan="1" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapGestureRecognizer" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+
+
+        <Button x:Name="MyLocation"  Clicked="OnMyLocation"  
+                HeightRequest="46" WidthRequest="46"  BackgroundColor="White" android:Button.UseDefaultShadow="True" android:Button.UseDefaultPadding="True" Opacity="{StaticResource defaultMapOpacity}"
+                HorizontalOptions="Center" VerticalOptions="End"
+                Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="1"   Grid.RowSpan="1">
+
+            <Button.Image >
+                <OnPlatform x:TypeArguments="FileImageSource" WinPhone="Assets\\ic_my_location_black_24dp.png" iOS="ic_my_location_black_48dp.png"  Android="ic_my_location_black_24dp2.png"/>
+            </Button.Image>
+        </Button>
+
+        <Button x:Name="ChooseMapType"   Clicked="OnChooseMapType"
+                HeightRequest="46" WidthRequest="46" BackgroundColor="White"  android:Button.UseDefaultShadow="True" android:Button.UseDefaultPadding="True"  Opacity="{StaticResource defaultMapOpacity}"
+                HorizontalOptions="Center"  VerticalOptions="Center"
+                Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="1"   Grid.RowSpan="1"   >
+
+            <Button.Image >
+                <OnPlatform x:TypeArguments="FileImageSource" WinPhone="Assets\\icons8_glob_24.png" iOS="icons8_glob_48.png" Android="icons8_glob_24gray.png" />
+            </Button.Image>
+
+        </Button>
+
+
+        <StackLayout  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="6"   Grid.RowSpan="1" Margin="8,8,8,8" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+            <Button x:Name="UsingMap" Clicked="OnUsingMap" BorderRadius="48"  IsVisible="True"  Opacity="{StaticResource defaultMapOpacity}"        
+                HeightRequest="96" WidthRequest="96"  BackgroundColor="White" android:Button.UseDefaultShadow="True" android:Button.UseDefaultPadding="True">
+                <Button.Image >
+                    <OnPlatform x:TypeArguments="FileImageSource" WinPhone="Assets\\Icon_set_start96.png" iOS="Icon_set_start96.png" Android="Icon_set_start96.png" />
+                </Button.Image>
+            </Button>
+
+            <Button x:Name="UsingMapPause" Clicked="OnUsingMapPause" BorderRadius="48"  IsVisible="False"  Opacity="{StaticResource defaultMapOpacity}"        
+                HeightRequest="96" WidthRequest="96"  BackgroundColor="White" android:Button.UseDefaultShadow="True" android:Button.UseDefaultPadding="True">
+                <Button.Image >
+                    <OnPlatform x:TypeArguments="FileImageSource" WinPhone="Assets\\Icon_set_pause96.png" iOS="Icon_set_pause96.png" Android="Icon_set_pause96.png" />
+                </Button.Image>
+            </Button>
+
+            <Button x:Name="UsingMapStop" Clicked="OnUsingMapStop" BorderRadius="48" IsVisible="False"   Opacity="{StaticResource defaultMapOpacity}"        
+                HeightRequest="96" WidthRequest="96"  BackgroundColor="White" android:Button.UseDefaultShadow="True" android:Button.UseDefaultPadding="True">
+                <Button.Image >
+                    <OnPlatform x:TypeArguments="FileImageSource" WinPhone="Assets\\Icon_set_stop96.png" iOS="Icon_set_stop96.png" Android="Icon_set_stop96.png" />
+                </Button.Image>
+            </Button>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
+
+
+
+
+
+

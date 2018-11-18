@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApplicationForRunners.AplicationPages.UserOptionsPgae"
+             Padding="{StaticResource defaultPadding}">
+    <ContentPage.Content>
+        <StackLayout Margin="10,0,10,0">
+            <StackLayout VerticalOptions="CenterAndExpand">
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand">
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="Birthday"/>
+                    <DatePicker x:Name="birthdayText"/>
+                </StackLayout>
+
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Male"></Label>
+                    <Switch x:Name="genderSwitch" />
+                    <Label Text="Female"></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                    <Label Text="Weight"/>
+                    <Entry x:Name="weightText"
+                        Placeholder="Weight"/>
+                    
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                    <Label Text="Height"/>
+                    <Entry x:Name="heightText"
+                          Placeholder="Height"/>
+                </StackLayout>
+
+                <Button Text="Save changes" Margin="10,15,10,0" Style="{StaticResource defaultButtonStyle}" 
+                          Clicked="OnSave" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

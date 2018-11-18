@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApplicationForRunners.AplicationPages.StartPage"
+             Title="ApplicationForRunners"
+             BackgroundColor="#FFFFFF" >
+            
+    <Page.Resources>
+        <ResourceDictionary>
+           
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <ContentPage x:Name="LoginPageXaml1" Title="Login" Padding="{StaticResource defaultPadding}">
+        <StackLayout>
+            <StackLayout  VerticalOptions="CenterAndExpand">                
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand" >
+
+                <Label Text="Login" FontSize="Large"  HorizontalOptions="CenterAndExpand"></Label>
+
+                <Button Text="Facebook" Style="{StaticResource defaultButtonStyle}"
+                        Clicked="OnLoginFacebook"/>
+
+                <Button x:Name="LoginGoogle" Text="Google" Style="{StaticResource defaultButtonStyle}"
+                     Clicked="OnLoginGoogle" />
+
+                <Button Text="Twitter" Style="{StaticResource defaultButtonStyle}" 
+                     Clicked="OnLoginTwitter" />
+
+                <Button Text="Microsoft" Style="{StaticResource defaultButtonStyle}" 
+                     Clicked="OnLoginMicrosoft" />
+
+                <Button Margin="10,15,10,0"   Style="{StaticResource defaultButtonStyle}"                 
+                      Text="Registration"                                                
+                      Clicked="GoRegistration1"     />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage x:Name="RegistrationPageXaml1"  Title="Registration" Padding="{StaticResource defaultPadding}">
+        <StackLayout >
+            <StackLayout VerticalOptions="CenterAndExpand">
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand">
+
+                <Label Text="Registration" FontSize="Large"  HorizontalOptions="CenterAndExpand"></Label>
+
+                <Button Text="Facebook" Style="{StaticResource defaultButtonStyle}" 
+                     Clicked="OnRegistrationFacebook" />
+
+                <Button Text="Google" Style="{StaticResource defaultButtonStyle}" 
+                     Clicked="OnRegistrationGoogle" />
+
+                <Button Text="Twitter" Style="{StaticResource defaultButtonStyle}" 
+                     Clicked="OnRegistrationTwitter" />
+
+                <Button Text="Microsoft"  Style="{StaticResource defaultButtonStyle}"                                            
+                      Clicked="OnRegistrationMicrosoft"     />
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+
+    <ContentPage x:Name="RegistrationPageXaml2"  Title="Registration" Padding="{StaticResource defaultPadding}" >
+        <StackLayout Margin="10,0,10,0">
+            <StackLayout VerticalOptions="CenterAndExpand">
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="Birthday"></Label>
+                    <DatePicker x:Name="birthdayText"
+                    />
+                </StackLayout>
+
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Male"></Label>
+                    <Switch x:Name="genderSwitch"  ></Switch>
+                    <Label Text="Female"></Label>
+                </StackLayout>
+
+
+                <Entry x:Name="weightText"
+                      Placeholder="Weight"/>
+
+                <Entry x:Name="heightText"
+                      Placeholder="Height"/>
+
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label Text="KM"></Label>
+                    <Switch x:Name="unitsSwitch"></Switch>
+                    <Label Text="MI"></Label>
+                </StackLayout>
+
+
+                <Button Text="Registration" Margin="0,15,0,0" Style="{StaticResource defaultButtonStyle}" 
+                      Clicked="OnRegistration"  />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>

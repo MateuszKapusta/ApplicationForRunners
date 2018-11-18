@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApplicationForRunners.AplicationPages.OptionsPage"
+             Padding="{StaticResource defaultPadding}">
+    <ContentPage.Content>
+        
+        <StackLayout VerticalOptions="End">
+            <StackLayout  Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,0,0,10">
+                <Label Text="KM"></Label>
+                <Switch x:Name="unitsSwitch" Toggled="OnToggledUnits"></Switch>
+                <Label Text="MI"></Label>
+            </StackLayout>
+            <Button x:Name="ChangeUserOpt" Style="{StaticResource defaultButtonStyle}" Text="Change user data" Clicked="OnChangeUserOpt" ></Button>
+            <Button x:Name="Logout" Style="{StaticResource defaultButtonStyle}" Text="Logout" Clicked="OnLogout" Margin="10,30,10,0"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

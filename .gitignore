@@ -1,18 +1,24 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+packages
+bin
+obj
+.vs
+*.user
 
-# Other files and folders
-.settings/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+#Server
+PublishProfiles
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+#Client
+MyKey.txt
+*.nuget.props
+*.nuget.targets
+
+	# Android
+	Resource.designer.cs
+
+	# UWP
+	*.pfx
+	*.lock.json
+
+	# iOS
+	

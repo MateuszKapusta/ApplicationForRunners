@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApplicationForRunners.AplicationPages.CounterFieldPage"
+             Title="Change field"
+             >
+  <ListView x:Name="MyListView"
+            ItemsSource="{Binding Items}"           
+            ItemSelected="Handle_ItemSelected"
+            CachingStrategy="RecycleElement">
+
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
+                        <Label VerticalOptions="FillAndExpand" 
+                        VerticalTextAlignment="Center"
+                        Text="{Binding .}" 
+                        TextColor="Black"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
