@@ -8,3 +8,9 @@ Initialization instruction https://docs.microsoft.com/en-us/xamarin/xamarin-form
 
 Usage of AppCenter requires NUnit 2.6.3 or 2.6.4 to run tests. AppUITest use NUnit 3.x.
 AppCenter instruction https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/xamarin
+
+
+<br />
+<br />
+
+![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/ApplicationForRunners_Xamarin_Forms/App.png)
