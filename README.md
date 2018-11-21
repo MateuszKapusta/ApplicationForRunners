@@ -1,6 +1,6 @@
 # ApplicationForRunners
 
-Server and client application for runners written in c# using Xamarin.Form and Azure App Service.
+Server and client application for runners written in c# using Xamarin.Form and Azure App Service.<br/> 
 Application work on Android, iOS and UWP.
 
 On Android application will start but if you dont have key, map will not appear. UWP application need key to work. <br />
