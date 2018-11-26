@@ -1,4 +1,4 @@
-# ApplicationForRunners 25.09.2018r. 
+# ApplicationForRunners 
 
 
 Server and client written in C # using Xamarin.Form and Azure App Service. The application works on Android, iOS and UWP.<br />
