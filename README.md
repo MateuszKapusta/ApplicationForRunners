@@ -1,4 +1,4 @@
-# ApplicationForRunners ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/trainers144AFR.png)
+# ApplicationForRunners ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/trainers40AFR.png)
 
 
 Server and client written in C # using Xamarin.Form and Azure App Service. The application works on Android, iOS and UWP.<br />
