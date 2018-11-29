@@ -11,8 +11,12 @@ Maps initialization https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-
 
 Usage of AppCenter requires NUnit 2.6.3 or 2.6.4 to run tests. AppUITest use NUnit 3.x. <br />
 AppCenter instruction https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/xamarin<br />
+<br />
 
-
-![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/App.png)
-![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/mainMD.png)
+![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/App.png)<br />
+<br />
+<br />
+![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/mainMD.png)<br />
+<br />
+<br />
 ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/startPage.png)
