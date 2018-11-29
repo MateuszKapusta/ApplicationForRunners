@@ -1,4 +1,4 @@
-# ApplicationForRunners 
+# ApplicationForRunners ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/trainers144AFR.png)
 
 
 Server and client written in C # using Xamarin.Form and Azure App Service. The application works on Android, iOS and UWP.<br />
@@ -17,4 +17,7 @@ AppCenter instruction https://docs.microsoft.com/en-us/appcenter/sdk/getting-sta
 <br />
 
 
-![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/App.png)
+![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/App.png)<br />
+<br />
+![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/mainMD.png)
+![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/startPage.png)
