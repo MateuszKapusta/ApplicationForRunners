@@ -15,7 +15,7 @@ AppCenter instruction https://docs.microsoft.com/en-us/appcenter/sdk/getting-sta
 
 ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/App.png)<br />
 <br />
-
+---
 ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/mainMD.png)<br />
 <br />
 
