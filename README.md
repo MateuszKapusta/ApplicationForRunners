@@ -20,3 +20,7 @@ AppCenter instruction https://docs.microsoft.com/en-us/appcenter/sdk/getting-sta
 <br />
 
 ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/startPage.png)<br />
+
+|![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/Androidstop.png)| ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/iOSstop.png)|![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/UWPstop.png)|
+|:---:|:-----:|:---:|
+| Android|iOS|Windows 10 Mobile|
