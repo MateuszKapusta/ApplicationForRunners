@@ -15,7 +15,6 @@ Maps initialization https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-
 
 You can test client on iOS and Android using AppUITest project, locally or on AppCenter. Remember to set you App Secret in code for testing on AppCenter. Usage of AppCenter requires NUnit 2.6.3 or 2.6.4 to run tests. AppUITest locally use NUnit 3.x. <br />
 AppCenter instruction https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/xamarin<br />
-<br />
 
 ## Usage
 ### Aplication
