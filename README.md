@@ -15,14 +15,18 @@ Before you publish server you mast create Mobile App on https://portal.azure.com
 You can test client on iOS and Android using AppUITest project, locally or on AppCenter. Remember to set you App Secret in code for testing on AppCenter. Usage of AppCenter requires NUnit 2.6 to run tests. AppUITest locally use NUnit 3.x AppCenter instruction https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/xamarin<br />
 
 ## Usage
-### Aplication
-
-![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/mainMD.png)<br />
 
 ### Login and Registration
 
 ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/startPage.png)<br />
 
+### Aplication
+
+![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/mainMD.png)<br />
+
+## Licence
+
+The code is released under the [MIT license](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/LICENSE)
 
 
 
