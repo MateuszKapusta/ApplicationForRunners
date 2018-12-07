@@ -1,6 +1,5 @@
 # ApplicationForRunners
 
-
 Server and client written in C # using Xamarin.Form and Azure App Service. The application works on Android, iOS and UWP.<br />
 Its main function is to help runner in training.
 
@@ -13,12 +12,20 @@ Usage of AppCenter requires NUnit 2.6.3 or 2.6.4 to run tests. AppUITest use NUn
 AppCenter instruction https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/xamarin<br />
 <br />
 
-![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/App.png)<br />
-<br />
----
+
+|![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/Androidstop.png)|                    ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/iOSstop.png)|                         ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/UWPstop.png)|
+|:---:|:---:|:---:|
+| Android|iOS|Windows Mobile|
+
+## Android Interface
+### Aplication
+
 ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/mainMD.png)<br />
-<br />
+
+### Login and registration
 
 ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/startPage.png)<br />
+
+
 
 
