@@ -1,0 +1,19 @@
+#Map key
+
+#Android, YOUR_API_KEY
+AIzaSyBrR3bawX4h2HsgxfDt_CHsWIlU9l0XxWA
+
+#UWP, AUTHORIZATION_TOKEN
+FhyabtaAZNDUhifvyZIi~qAIn54XKDtLVOEyTdgtrxw~AsZXZr-IJqWAShCXktxvtzcViUiCjVg55vAajBurRVrBLCPlfT_-yKbm30_QI6ce
+
+#App Center Portal the App Secret, {Your App Secret}
+
+#Android
+44ff995d-4c8c-4202-abab-80adfb9f7315
+
+#iOS
+e4c46fbb-f476-4612-a35e-4485f2e7a076
+
+
+#UWP
+103fc891-722f-4ea0-bc64-58c17bcdfaf4

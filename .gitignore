@@ -9,7 +9,7 @@ obj
 PublishProfiles
 
 #Client
-MyKey.txt
+#MyKey.txt
 *.nuget.props
 *.nuget.targets
 
