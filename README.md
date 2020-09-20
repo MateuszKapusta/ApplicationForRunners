@@ -1,6 +1,6 @@
 # ApplicationForRunners
 
-Server and client written in C # using Xamarin.Form and Azure App Service. Its main function is to help runner in training.<br /> The application works on Android, iOS and UWP.<br />
+Backend and client aplication written in C # using Xamarin.Form and ASP.NET . Its main function is to help runner in training.<br /> The application works on Android, iOS and UWP.<br />
 
 |![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/Androidstop.png)|                    ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/iOSstop.png)|                         ![alt text](https://github.com/MateuszKapusta/ApplicationForRunners/blob/master/Pictures/UWPstop.png)|
 |:---:|:---:|:---:|
